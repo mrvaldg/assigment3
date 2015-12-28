@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Students</title>
+</head>
+<body>
+Students List:
+{% for x in s %}
+<ul>Student:{{ x }}<br>Courses:<br>{% for c in x.courses.all %}<ul>{{ c }}</ul><br>{% endfor %}</ul>
+{% endfor %}
+</body>
+</html>
